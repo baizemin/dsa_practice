@@ -72,3 +72,4 @@ print(arr)
 
 #finally is hoare's used for it's less swaps does better work in large databases
 #lomuto's used for it's simplicity
+#also the lomuto is semi stable

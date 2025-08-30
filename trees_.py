@@ -47,6 +47,7 @@ class binary_trees:
             root.left = self._delete_aux(root.left,key)
         elif key > root.val:
             root.right = self._delete_aux(root.right,key)
+        # this happens when we find the key in tree above code is for searching the key
         else:
             if root.left is None:
                 temp = root.right
@@ -73,7 +74,6 @@ if __name__ == '__main__':
         bst.insert(n)
 
     print("we are traversing...",bst.inorder_traversal())
-
     key = 30
     found = bst.search(key)
     if found:

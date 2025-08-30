@@ -28,7 +28,7 @@ class Heap:
             parent = self._parent_index(i)
 
     # Corrected for a min-heap with a recursive call fix
-    #it it used to maintain the heap when the a root is removed
+    #it used to maintain the heap when the a root is removed
     def _shift_down(self, index):
         min_idx = index
         right = self._right_child_index(index)
