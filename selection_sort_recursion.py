@@ -17,3 +17,20 @@ arr = [2,4,1,7,3,9,8,4]
 selection_sort(arr,len(arr))
 print(arr)
 
+
+def selection_sort(arr):
+    max_index = 0
+    max_value = 0
+    for i in range(len(arr)-1,-1,-1):
+        max_index = i
+        for j in range(i):
+            if arr[j] > arr[max_index]:
+                max_index = j
+        arr[i], arr[max_index] = arr[max_index], arr[i]
+
+arr = [2,4,1,7,3,9,8,4]
+selection_sort(arr)
+print(arr)
+
+
+

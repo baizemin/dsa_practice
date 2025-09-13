@@ -9,6 +9,7 @@ class binary_trees:
         self.root = None
     def insert(self,key):
         self.root = self._insert_aux(self.root,key)
+
     def _insert_aux(self,node,key):
         if node is None:
             return Node(key)
@@ -20,6 +21,7 @@ class binary_trees:
 
     def search(self,key):
         return self._search_aux(self.root,key)
+
     def _search_aux(self,root,key):
         if root is None or root.val == key:
             return root
